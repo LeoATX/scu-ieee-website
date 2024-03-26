@@ -1,0 +1,40 @@
+<main>
+    <header>
+        <div class="center-header">
+            <a id="logo" [routerLink]="['/']">
+                <img id="logo-svg" src="/assets/IEEE_Master Brand/IEEE_MB_BLUE/RGB/IEEE_MB_blue_RGB_300ppi.png" />
+                <p id="logo-text">&#64;SCU</p>
+            </a>
+            <nav>
+                <ul class="main-menu" [class.display]="navDisplay">
+
+                    <a class="main-menu-item-link" [routerLink]="['/about']">
+                        <li class="main-menu-item">
+                            about
+                        </li>
+                    </a>
+
+                    <a class="main-menu-item-link" [routerLink]="['/projects']">
+                        <li class="main-menu-item">
+                            projects
+                        </li>
+                    </a>
+                    <a class="main-menu-item-link" [routerLink]="['/calendar']">
+                        <li class="main-menu-item">
+                            calendar
+                        </li>
+                    </a>
+
+                    <a class="main-menu-item-link" [routerLink]="['/newsletter']">
+                        <li class="main-menu-item">
+                            newsletter
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+            <button id="hamburger" (click)="toggleNavbar()">
+                <img id="hamburger-svg" [src]="hamburgerSrc">
+            </button>
+        </div>
+    </header>
+</main>

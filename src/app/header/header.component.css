@@ -1,0 +1,141 @@
+main {
+    box-sizing: inherit;
+    display: block;
+    min-height: 100%;
+    /* padding: 1rem; */
+    padding: 8px;
+    background-color: transparent;
+}
+
+header {
+    /* border-style: solid; */
+    align-items: center;
+    box-sizing: inherit;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    padding: 0px auto auto auto;
+    position: relative;
+    width: auto;
+}
+
+ul.main-menu {
+    align-items: center;
+    /* fallback value */
+    display: flex;
+    font-family: 'JetBrains Mono';
+    font-weight: 400;
+    font-size: 16px;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0px;
+    /* border-style: solid; */
+    gap: 32px;
+}
+
+li.main-menu-item {
+    padding: 0.5rem;
+}
+
+.main-menu-item-link {
+    transition: 0.32s;
+    color: black;
+    opacity: 0.64;
+    text-decoration: none;
+}
+
+.main-menu-item-link:hover {
+    transition: 0.32s;
+    opacity: 1;
+}
+
+.center-header {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    padding: 0px 32px;
+    width: 100%;
+}
+
+#logo {
+    align-items: center;
+    box-sizing: content-box;
+    display: flex;
+    height: inherit;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+#logo-svg {
+    height: inherit;
+}
+
+#logo-text {
+    color: black;
+    font-family: 'Futura PT';
+    font-size: 32px;
+    font-weight: 900;
+    margin: 0px;
+    padding-left: 8px;
+    text-decoration: none;
+    inline-size: auto;
+}
+
+#hamburger {
+    position: fixed;
+    display: none;
+    top: 4px;
+    right: 8px;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+#hamburger-svg {
+    height: 36px;
+    width: 36px;
+}
+
+#hamburger:active {
+    transform: translateY(2px);
+}
+
+#hamburger-svg {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+    ul.main-menu {
+        background-color: white;
+        display: none;
+        left: 0px;
+        margin: 0px;
+        padding: 16px 20px;
+        position: fixed;
+        top: 0px;
+        width: calc(100vw - 20px);
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    ul.main-menu.display {
+        display: block;
+        animation: fade-in 0.5s;
+    }
+
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
