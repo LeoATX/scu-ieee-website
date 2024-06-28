@@ -14,7 +14,7 @@ app-header {
 }
 
 canvas {
-    background-color: white;
+    background-color: transparent;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -29,6 +29,11 @@ canvas {
     justify-content: center;
 }
 
+.column {
+    display: block;
+    width: 65%;
+}
+
 .align-left-container {
     align-items: center;
     display: flex;
@@ -40,11 +45,6 @@ canvas {
     min-height: 480px;
 }
 
-#column {
-    display: block;
-    width: 65%;
-}
-
 #mission {
     padding: 0px 0px 0px 0px;
     font-weight: 500;
@@ -53,15 +53,17 @@ canvas {
     
 }
 
-#learn-more-section {
+#newsletter-section {
     background-color: lightblue;
-    min-height: 200px;
-    /* screen height as a variable */
+    height: 200px;
+}
+
+#newsletter-flex {
+    display: flex;
 }
 
 @media screen and (max-width: 768px) {
     #mission {
         font-size: 36px;
     }
-
 }

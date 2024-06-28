@@ -12,6 +12,10 @@ export class HeaderComponent {
     navDisplay: boolean = false;
     hamburgerSrc: string = '/assets/icons/hamburger.svg';
 
+    scrollNavbar() {
+        console.log('navbar is scrolled');
+    }
+
     toggleNavbar() {
         if (this.navDisplay == false) {
             this.navDisplay = true;
