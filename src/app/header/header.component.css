@@ -47,6 +47,7 @@ li.main-menu-item {
 .main-menu-item-link:hover {
     transition: 0.32s;
     opacity: 1;
+    text-decoration: underline;
 }
 
 .center-header {
